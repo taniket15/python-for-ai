@@ -1,0 +1,19 @@
+[project]
+name = "python-for-ai"
+version = "0.1.0"
+description = "Hands-on Python exercises for developers moving into AI engineering (with TypeScript/JavaScript equivalents)"
+readme = "README.md"
+authors = [
+    { name = "Taniket Mehra" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.142.2",
+    "openai>=3.24.0",
+    "pydantic>=2.13.5",
+    "requests>=2.34.2",
+]
+
+[tool.uv]
+# Run scripts directly; no installable package needed for learning exercises
+package = false
